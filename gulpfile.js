@@ -12,8 +12,8 @@ var rimraf = require('gulp-rimraf');
 var tsProject = ts.createProject(tsConfig.compilerOptions);
 
 gulp.task('copy:tpl',  function() {
-    return gulp.src(['src/tpl/**/*'])
-        .pipe(gulp.dest('dist/tpl'));
+    return gulp.src(['src/app/tpl/**/*'])
+        .pipe(gulp.dest('dist/app/tpl'));
 });
 
 //copy dependencies to dist folder
