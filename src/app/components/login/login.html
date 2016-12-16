@@ -1,16 +1,14 @@
 <div class="lbox-horz"></div>
-<div class="lbox-vert">
-    <a href="" class="icon-info ttips forgot-password" title="Problem&nbsp;Login?"></a>
-</div>
+<div class="lbox-vert"></div>
 
 <div class="login-box side-form">
-    <form class="form-validation">
+    <div class="form-validation">
         <div class="form-group">
-            <input type="text" class="input-sm validate[required,custom[email]] form-control" placeholder="Email Address">
+            <input #account type="text" class="input-sm validate[required,custom[email]] form-control" placeholder="账号">
         </div>
         <div class="form-group">
-            <input type="password" class="input-sm validate[required] form-control" placeholder="Password">
+            <input  #password type="password" class="input-sm validate[required] form-control" placeholder="密码">
         </div>
-        <input type="submit" class="btn btn-gr-gray btn-block btn-xs" value="VERIFY & lOGIN">
-    </form>
+        <button class="btn btn-gr-gray btn-block btn-xs" (click)="login(account.value,password.value)">登录</button>
+    </div>
 </div>
