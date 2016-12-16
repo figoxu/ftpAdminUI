@@ -11,6 +11,11 @@ var rimraf = require('gulp-rimraf');
 //Typescript Config;
 var tsProject = ts.createProject(tsConfig.compilerOptions);
 
+gulp.task('copy:tpl',  function() {
+    return gulp.src(['src/tpl/**/*'])
+        .pipe(gulp.dest('dist/tpl'));
+});
+
 //copy dependencies to dist folder
 gulp.task('copy:deps', function(){
   return gulp.src([
@@ -48,9 +53,8 @@ gulp.task('compile:app', function(){
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
 });
-
 //live reload server
-gulp.task('server', ['copy:deps', 'copy:src','compile:app'], function() {
+gulp.task('server', ['copy:tpl','copy:deps', 'copy:src','compile:app'], function() {
   connect.server({
     root: 'dist',
     livereload: true,
