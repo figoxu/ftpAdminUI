@@ -27,6 +27,7 @@ export class AppComponent{
     navs = [
         {url: "", content: "Home"},
         {url: "contacts", content: "Contacts"},
+        {url: "login", content: "LoginComponent"},
         {url: "contacts/1", content: "One"},
     ];
 }

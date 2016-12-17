@@ -2449,7 +2449,7 @@ aside ul li:last-child, aside ul li:last-child a, .activity > li:last-child {
 }
 
 /* --------------------------------------------------------
-    Login / Register
+    LoginComponent / Register
 -----------------------------------------------------------*/
 [class*="lbox-"] {
     background: rgba(0,0,0,0.4);
