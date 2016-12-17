@@ -422,7 +422,7 @@ aside .btn {
 
 #content {
     background: url(../img/content-bg/content-bg.jpg);
-    margin: 0 230px;
+    margin: 15px;
     min-height: 500px;
     padding: 20px 20px 35px;
     position: relative;
@@ -2436,6 +2436,15 @@ input:focus, select:focus, textarea:focus {
 
 ;
 #footer {
+    width:255px;
+    margin:0 auto;
+    text-align: center;
+    color: #797979;
+    margin-top: 10px
+}
+#footer p{
+    width:255px;
+    margin:0 auto;
     text-align: center;
     color: #797979;
     margin-top: 10px
@@ -2510,7 +2519,7 @@ input:focus, select:focus, textarea:focus {
 
 @media (max-width: 1200px) {
     #content {
-        margin-right: 15px
+        margin: 15px
     }
 
     #rightbar {
@@ -2544,7 +2553,7 @@ input:focus, select:focus, textarea:focus {
 
 @media (max-width: 992px) {
     #content {
-        margin-left: 200px
+        margin: 15px
     }
 
     #leftbar .sidebar-container {
@@ -2608,7 +2617,7 @@ input:focus, select:focus, textarea:focus {
 
 @media (max-width: 768px) {
     #content {
-        margin-left: 15px
+        margin: 15px
     }
 
     #leftbar {
