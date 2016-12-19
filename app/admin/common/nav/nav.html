@@ -1,3 +1,4 @@
+<base href="/">
 <header id="header" class="clearfix">
     <!-- Logo -->
     <a href="#" class="logo shadowed">
@@ -18,9 +19,9 @@
     </div>
 
     <ul class="nav nav-pills pull-right shadowed" id="top-menu">
-        <li [ngClass]="{active:[currentMenu]=='统计报表'}"><a href="#">统计报表</a></li>
-        <li [ngClass]="{active:[currentMenu]=='FTP账号'}"><a href="#">FTP账号</a></li>
-        <li [ngClass]="{active:[currentMenu]=='修改密码'}"><a href="#">修改密码</a></li>
+        <li [ngClass]="{active:[currentMenu]=='统计报表'}"><a style="cursor: pointer;" (click)="nav('统计报表')">统计报表</a></li>
+        <li [ngClass]="{active:[currentMenu]=='FTP账号'}"><a  style="cursor: pointer;" (click)="nav('FTP账号')">FTP账号</a></li>
+        <li [ngClass]="{active:[currentMenu]=='修改密码'}"><a style="cursor: pointer;"  (click)="nav('修改密码')">修改密码</a></li>
     </ul>
 
 </header>

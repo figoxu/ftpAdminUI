@@ -17,7 +17,7 @@ export class LoginComponent {
 
         if(account=='admin'&&password=='admin'){
             console.log("login")
-            this.router.navigate(['admin'])
+            this.router.navigate(['admin',"account"])
         }else{
             console.log("login failure")
         }
