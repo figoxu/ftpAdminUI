@@ -1,7 +1,7 @@
 <header id="header" class="clearfix">
     <!-- Logo -->
     <a href="#" class="logo shadowed">
-        Figo FTP Admin
+        Figo FTP Admin {{2>3}}  {{"hello"=="hello"}}
     </a>
 
     <div class="dropdown profile-menu shadowed">
@@ -18,9 +18,9 @@
     </div>
 
     <ul class="nav nav-pills pull-right shadowed" id="top-menu">
-        <li><a href="#">统计报表</a></li>
-        <li><a href="#">FTP账号</a></li>
-        <li><a href="#">修改密码</a></li>
+        <li [ngClass]="{active:[currentMenu]=='统计报表'}"><a href="#">统计报表</a></li>
+        <li [ngClass]="{active:[currentMenu]=='FTP账号'}"><a href="#">FTP账号</a></li>
+        <li [ngClass]="{active:[currentMenu]=='修改密码'}"><a href="#">修改密码</a></li>
     </ul>
 
 </header>
