@@ -14,8 +14,6 @@
         },
         map: {
             app: 'app',
-            '@progress': 'http://www.telerik.com/kendo-angular-ui/npm/node_modules/@progress',
-            '@telerik': 'http://www.telerik.com/kendo-angular-ui/npm/node_modules/@telerik',
 
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -41,8 +39,6 @@
 
         },
         packages: {
-            "@progress/kendo-angular-dialog": {"main":"dist/cdn/js/kendo-angular-dialog.js","defaultExtension":"js"},
-            "@progress/kendo-angular-grid": {"main":"dist/cdn/js/kendo-angular-grid.js","defaultExtension":"js"},
             app: {
                 main: './main.ts',
                 defaultExtension: 'ts'
@@ -52,10 +48,6 @@
             },
             'angular2-in-memory-web-api': {
                 main: './index.js',
-                defaultExtension: 'js'
-            },
-            '@progress/kendo-data-query': {
-                main: 'dist/cdn/js/kendo-data-query.js',
                 defaultExtension: 'js'
             }
         }

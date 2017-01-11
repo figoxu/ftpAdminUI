@@ -4,19 +4,17 @@
     <title>Angular 2 Lessons</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script>
         var path = document.location.href.includes('plnkr')
             ? './'
             : '/';
         document.write('<base href="' + path + '"/>');
     </script>
-    <link rel="stylesheet" href="http://www.telerik.com/kendo-angular-ui/npm/node_modules//@telerik/kendo-theme-default/dist/all.css" />
-
-    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
-
-    <script src="https://unpkg.com/zone.js@0.6.23?main=browser"></script>
-    <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
-    <script src="https://unpkg.com/systemjs@0.19.27/dist/system.src.js"></script>
+    <script src="./tpl/angularLib/shim.min.js"></script>
+    <script src="./tpl/angularLib/zone.js@0.6.23"></script>
+    <script src="./tpl/angularLib/reflect-metadata@0.1.3"></script>
+    <script src="./tpl/angularLib/system.src.js"></script>
     <script src="system.config.js"></script>
     <script>
         System.import('app').catch(function(err){ console.error(err); });
@@ -29,19 +27,5 @@
 <link href="tpl/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="tpl/css/icomoon.min.css" rel="stylesheet">
 <link href="tpl/css/style.min.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="http://www.telerik.com/kendo-angular-ui/npm/node_modules//@telerik/kendo-theme-default/dist/all.css" />
-<link rel="stylesheet" href="http://www.telerik.com/kendo-angular-ui/npm/node_modules//@telerik/kendo-theme-default/dist/all.css" />
-<style>
-    html, body { overflow: hidden; }
-    body { font-family: "RobotoRegular",Helvetica,Arial,sans-serif; font-size: 14px; margin: 0; }
-    my-app { display: block; width: 100%; overflow: hidden; min-height: 280px; box-sizing: border-box; padding: 20px; }
-    my-app > .k-loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-    .example-wrapper { min-height: 280px; }
-    .example-wrapper p { margin: 0 0 10px; }
-    .example-col { display: inline-block; padding-right: 20px; }
-    .example-config { margin: 0 0 20px; padding: 20px; background-color: rgba(0,0,0,.03); border: 1px solid rgba(0,0,0,.08); }
-</style>
 </body>
 </html>

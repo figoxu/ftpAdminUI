@@ -4,25 +4,7 @@
 <section id="content" class="container">
     Account Manage
 </section>
-<kendo-grid [data]="view" [height]="400">
-    <kendo-grid-toolbar>
-        <button (click)="addProduct()" class="k-button k-button-icontext k-grid-add">Add new</button>
-    </kendo-grid-toolbar>
 
-    <kendo-grid-column field="ProductName"></kendo-grid-column>
-    <kendo-grid-column field="UnitPrice" title="UnitPrice"></kendo-grid-column>
-    <kendo-grid-column field="Discontinued" title="Discontinued"></kendo-grid-column>
-    <kendo-grid-column field="UnitsInStock" title="Units In Stock"></kendo-grid-column>
-    <kendo-grid-column>
-        <template kendoCellTemplate let-dataItem>
-            <button (click)="onEdit(dataItem)" class="k-button k-button-icontext k-grid-edit">Edit</button>
-            <button (click)="onDelete(dataItem)" class="k-button k-button-icontext k-grid-delete">Delete</button>
-        </template>
-    </kendo-grid-column>
-</kendo-grid>
-
-<kendo-grid-edit-form [model]="dataItem" (cancel)="onCancel()" (save)="onSave($event)">
-</kendo-grid-edit-form>
 <footer id="footer">
     <p>Copyright (c) 2016-2017, All rights reserved.</p>
 </footer>
