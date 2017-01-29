@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <h1>Hello</h1>
+    <login></login>
   </div>
 </template>
 
 <script>
+import Login from './cmp/Login'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    "login":Login
+  }
 }
 </script>
 
