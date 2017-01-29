@@ -22,7 +22,7 @@
     methods:{
       loginAction() {
         console.log("==> login")
-        this.$emit('logined',true);
+        this.$emit('logined',true)
       }
     }
   }
