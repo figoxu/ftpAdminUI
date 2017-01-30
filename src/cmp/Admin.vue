@@ -1,5 +1,5 @@
 <template>
-  <adminNav></adminNav>
+  <adminNav  @menuChanged="changeMenu"></adminNav>
 </template>
 
 <script>
@@ -8,6 +8,12 @@
   export default {
     components:{
       "adminNav":Nav
+    },
+    methods:{
+      changeMenu:function(event){
+        console.log("@menuChange")
+        console.log("@event:",event)
+      }
     }
   }
 </script>

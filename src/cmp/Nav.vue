@@ -30,7 +30,7 @@
       },
       goto:function (name) {
         this.menuName = name
-        this.$emit('menuChange',name)
+        this.$emit('menuChanged',name)
       }
     }
   }
