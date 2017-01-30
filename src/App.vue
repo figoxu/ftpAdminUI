@@ -2,6 +2,7 @@
   <div id="app">
     <login v-if="!loginFlag" @logined="dispatchLogin"></login>
     <admin v-else></admin>
+    <router-view v-if="loginFlag"></router-view>
   </div>
 </template>
 

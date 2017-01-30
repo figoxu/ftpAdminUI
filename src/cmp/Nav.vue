@@ -18,7 +18,7 @@
   export default {
     data() {
       return {
-        menuName:'ftp'
+        menuName:'dashboard'
       }
     },
     methods: {
@@ -31,6 +31,7 @@
       goto:function (name) {
         this.menuName = name
         this.$emit('menuChanged',name)
+        this.$router.push("/"+name)
       }
     }
   }
